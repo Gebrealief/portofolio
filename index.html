@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hewan Gebreslassie - Full Stack Java Developer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>Loading Portfolio...</p>
+    </div>
+
+    <!-- Scroll Progress Bar -->
+    <div id="progress-bar"></div>
+
+    <header>
+        <div class="container header-content">
+            <h1 class="fade-in">Hewan Gebreslassie</h1>
+            <p class="fade-in">Full Stack Java Developer | 6+ Years Experience</p>
+            <div class="social-links fade-in">
+                <a href="https://github.com/yourusername" target="_blank" class="social-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                    </svg>
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                    </svg>
+                    LinkedIn
+                </a>
+                <a href="mailto:hewan.gebreslassie@email.com" class="social-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                    </svg>
+                    Email
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#about" class="nav-link">About</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#experience" class="nav-link">Experience</a></li>
+            <li><a href="#projects" class="nav-link">Projects</a></li>
+            <li><a href="#education" class="nav-link">Education</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section id="about" class="reveal">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="profile-img">HG</div>
+                <div>
+                    <p class="typing-text">Hey there! I'm a full stack Java developer who loves turning complex problems into elegant solutions. With 6+ years of experience, I've worked with amazing companies like JPMorgan Chase and Nationwide Insurance, building everything from APIs to full-scale web applications.</p>
+                    <p>I'm all about automation and efficiency with passion for clean code.</p>
+                    <div class="certification-badge">
+                        ☁️ AWS Certified Cloud Practitioner
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="reveal">
+            <h2>Technical Skills</h2>
+            <div class="skills-filter">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="backend">Backend</button>
+                <button class="filter-btn" data-filter="frontend">Frontend</button>
+                <button class="filter-btn" data-filter="devops">DevOps</button>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">💻</div>
+                    <h3>Languages</h3>
+                    <ul>
+                        <li>Java (8, 11, 17, 21)</li>
+                        <li>JavaScript/TypeScript</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-category="frontend">
+                    <div class="skill-icon">🎨</div>
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>React, Angular</li>
+                        <li>HTML5, CSS3, Tailwind</li>
+                        <li>TypeScript</li>
+                        <li>Modern JavaScript (ES6+)</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">⚙️</div>
+                    <h3>Backend & Frameworks</h3>
+                    <ul>
+                        <li>Spring Boot, Spring Cloud</li>
+                        <li>Microservices Architecture</li>
+                        <li>Hibernate/JPA</li>
+                        <li>RESTful & GraphQL APIs</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">🗄️</div>
+                    <h3>Databases</h3>
+                    <ul>
+                        <li>PostgreSQL, MySQL</li>
+                        <li>MongoDB, Redis</li>
+                        <li>Oracle Database</li>
+                        <li>Database Optimization</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-category="devops">
+                    <div class="skill-icon">☁️</div>
+                    <h3>Cloud & DevOps</h3>
+                    <ul>
+                        <li>AWS (EC2, S3, Lambda, RDS)</li>
+                        <li>Docker, Kubernetes</li>
+                        <li>Jenkins, GitHub Actions</li>
+                        <li>Terraform, Infrastructure as Code</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-category="backend">
+                    <div class="skill-icon">🧪</div>
+                    <h3>Testing & Quality</h3>
+                    <ul>
+                        <li>JUnit, Mockito</li>
+                        <li>Cucumber, Selenium</li>
+                        <li>Test-Driven Development</li>
+                        <li>Contract Testing (Pact)</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-category="devops">
+                    <div class="skill-icon">🛠️</div>
+                    <h3>Tools & Platforms</h3>
+                    <ul>
+                        <li>Git, GitHub, GitLab</li>
+                        <li>IntelliJ IDEA, VS Code</li>
+                        <li>Maven, Gradle, npm</li>
+                        <li>Postman, Swagger/OpenAPI</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-category="devops">
+                    <div class="skill-icon">📊</div>
+                    <h3>Monitoring & Observability</h3>
+                    <ul>
+                        <li>Grafana, Prometheus</li>
+                        <li>ELK Stack (Elasticsearch)</li>
+                        <li>Application Performance Monitoring</li>
+                        <li>Log Aggregation</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-category="all">
+                    <div class="skill-icon">📋</div>
+                    <h3>Methodologies</h3>
+                    <ul>
+                        <li>Agile/Scrum, Kanban</li>
+                        <li>CI/CD Best Practices</li>
+                        <li>Microservices Design</li>
+                        <li>Event-Driven Architecture</li>
+                    </ul>
+                </div>
+                <div class="skill-card" data-category="all">
+                    <div class="skill-icon">🤝</div>
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Technical Leadership</li>
+                        <li>Code Review & Mentoring</li>
+                        <li>Cross-team Collaboration</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="reveal">
+            <h2>Professional Experience</h2>
+            <div class="timeline">
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Full Stack Java Developer</h3>
+                        <span class="duration">July 2021 - December 2023</span>
+                    </div>
+                    <div class="company">JPMorgan Chase Co</div>
+                    <ul>
+                        <li>Designed secure APIs using Spring Boot and TDD; orchestrated multi-region AWS infrastructure with Terraform</li>
+                        <li>Built automation solutions reducing password reset time from 8 hours to minutes and automated license deployments</li>
+                        <li>Implemented comprehensive testing strategy using JUnit, Cucumber, and Pact/Pact Flow for unit, component, and contract testing</li>
+                        <li>Configured Grafana dashboards with Prometheus/Cortex for system monitoring and optimized SQL queries improving performance</li>
+                        <li>Obtained AWS Cloud Practitioner certification and managed certificate renewals across Linux/Windows servers</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Full Stack Java Developer</h3>
+                        <span class="duration">June 2020 - December 2020</span>
+                    </div>
+                    <div class="company">Huntington National Bank</div>
+                    <ul>
+                        <li>Provided technical support for Java vendor applications and resolved Birt Eclipse reporting performance issues</li>
+                        <li>Fixed CACS application account setup problems caused by webservice updates using Postman for REST API testing</li>
+                        <li>Created MySQL scripts for database views and managed batch processing with weekend batch integrations</li>
+                        <li>Led scope estimation and documentation for Minor Collections module preventing minors from collections activity</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Full Stack Java Developer</h3>
+                        <span class="duration">December 2019 - May 2020</span>
+                    </div>
+                    <div class="company">American Electric Power (AEP)</div>
+                    <ul>
+                        <li>Supported Java and .NET applications, adding new features and investigating data discrepancies with SQL scripts</li>
+                        <li>Deployed UI Planner vendor software on Linux servers and provided training to field users</li>
+                        <li>Took ownership of AEP Location project for test automation and future enhancements</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Full Stack Developer</h3>
+                        <span class="duration">March 2018 - July 2019</span>
+                    </div>
+                    <div class="company">Nationwide Insurance</div>
+                    <ul>
+                        <li>Rewrote legacy quality management app with modern stack (Java, Angular 4, TypeScript, Ruby) significantly improving user satisfaction</li>
+                        <li>Built test automation framework using Cucumber/Watir, transforming team from manual to automated testing approach</li>
+                        <li>Implemented CI/CD pipelines with Jenkins/UCD and worked with J2EE technologies (Hibernate, Spring MVC, REST/SOAP services)</li>
+                        <li>Provided support for 30+ applications using Agile/Scrum methodology with comprehensive code reviews</li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="experience-header">
+                        <h3>Java Developer</h3>
+                        <span class="duration">September 2014 - August 2016</span>
+                    </div>
+                    <div class="company">Information Network Security Agency</div>
+                    <ul>
+                        <li>Built and deployed Java/J2EE applications in Agile CI environment with automated property administration and procurement systems</li>
+                        <li>Designed UI components with HTML5/CSS3/AngularJS and integrated backend using Spring framework (AOP, DI, security)</li>
+                        <li>Created OOP designs using StarUML with Use Case, Class, and Sequence diagrams; applied Facade and DAO patterns</li>
+                        <li>Implemented RESTful web services and used JUnit for unit testing with daily Git-based collaboration</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="reveal">
+            <h2>Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-number">01</div>
+                    <h3>MUM Online Assessment System</h3>
+                    <p>Developed a comprehensive personal assessment system for Maharishi University of Management, enabling students to take tests online with real-time grading and progress tracking.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring</span>
+                        <span class="tech-tag">Bootstrap</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">jQuery</span>
+                        <span class="tech-tag">MySQL</span>
+                    </div>
+                    <button class="project-btn">View Details</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number">02</div>
+                    <h3>MUM Schedule Management</h3>
+                    <p>Built schedule management software for academic students and faculty, streamlining course scheduling, room allocation, and conflict resolution.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring</span>
+                        <span class="tech-tag">MySQL</span>
+                        <span class="tech-tag">IntelliJ IDEA</span>
+                    </div>
+                    <button class="project-btn">View Details</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number">03</div>
+                    <h3>Car Pooling System</h3>
+                    <p>Developed ride-sharing coordination system with Google Maps API integration and OpenWeather API for weather forecasting, enabling users to make informed travel decisions.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">JSP</span>
+                        <span class="tech-tag">AJAX</span>
+                        <span class="tech-tag">JSON</span>
+                        <span class="tech-tag">Google Maps API</span>
+                    </div>
+                    <button class="project-btn">View Details</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number">04</div>
+                    <h3>Quality Management Application</h3>
+                    <p>Led complete rewrite of legacy codebase using modern technologies, dramatically improving application responsiveness and user satisfaction at Nationwide Insurance.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Angular 4</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Spring MVC</span>
+                    </div>
+                    <button class="project-btn">View Details</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number">05</div>
+                    <h3>Automated Password Reset Service</h3>
+                    <p>Developed automation solution at JPMorgan Chase that reduced manual password reset process from 8 hours to minutes, significantly improving operational efficiency.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">AWS</span>
+                        <span class="tech-tag">Security</span>
+                        <span class="tech-tag">Automation</span>
+                    </div>
+                    <button class="project-btn">View Details</button>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-number">06</div>
+                    <h3>Property Administration System</h3>
+                    <p>Automated property administration and procurement system for Information Network Security Agency, streamlining operations and improving efficiency.</p>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Java/J2EE</span>
+                        <span class="tech-tag">Spring</span>
+                        <span class="tech-tag">Hibernate</span>
+                        <span class="tech-tag">AngularJS</span>
+                    </div>
+                    <button class="project-btn">View Details</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="reveal">
+            <h2>Education</h2>
+            <div class="education-section">
+                <div class="education-card">
+                    <h3>🎓 Master's Degree</h3>
+                    <div class="school">Maharishi University of Management</div>
+                    <div class="year">August 2016 - July 2017</div>
+                    <div class="location">Fairfield, Iowa</div>
+                </div>
+                <div class="education-card">
+                    <h3>🎓 Bachelor of Engineering</h3>
+                    <div class="degree">Information Technology</div>
+                    <div class="school">Mekelle Institute of Technology (MIT)</div>
+                    <div class="year">2009 - 2013</div>
+                    <div class="location">Mekelle, Tigray, Ethiopia</div>
+                </div>
+            </div>
+            <div class="certification-section">
+                <div class="certification-card">
+                    <h3>🏆 Certification</h3>
+                    <div class="cert-title">AWS Certified Cloud Practitioner</div>
+                    <div class="cert-org">Amazon Web Services</div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="reveal">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <p>I'm always interested in hearing about new opportunities and exciting projects.</p>
+                <div class="contact-links">
+                    <a href="mailto:hewan.gebreslassie@email.com" class="contact-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                            <polyline points="22,6 12,13 2,6"></polyline>
+                        </svg>
+                        hewan.gebreslassie@email.com
+                    </a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" title="Go to top">↑</button>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Hewan Gebreslassie. All rights reserved.</p>
+            <p class="footer-links">
+                <a href="https://github.com/yourusername">GitHub</a> |
+                <a href="https://linkedin.com/in/yourusername">LinkedIn</a> |
+                <a href="mailto:hewan.gebreslassie@email.com">Email</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
